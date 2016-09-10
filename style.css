@@ -1,0 +1,664 @@
+/*
+Theme Name: SmithTraders
+Theme URI: http://www.premiumpress.com
+Description: PremiumPress Child Theme
+Author: ds@anagram.co.nz
+Author URI: http://smithtraders.co.nz
+Template: Responsive Car Dealer Theme
+Version: 1.0
+*/
+
+/* ==========================================================================
+   CAR DEALER THEME BY MARK FAIL / PREMIUMPRESS
+   ========================================================================== */
+
+@import url(style_childtheme.css);
+
+body {
+  background-color: #fafafa;
+}
+
+a {
+  color:#222;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-wrapper {
+  margin: auto auto;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.05);
+}
+
+.widecontainer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*------------------------------------------------------*/
+/* Header
+/*------------------------------------------------------*/
+
+/* info nav */
+
+.info-nav {
+  padding-top: 1em;
+  font-size: 11px;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+}
+.info-nav li + li {
+  margin-left: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #ddd;
+}
+.info-nav a {
+  color: #777;
+}
+
+/* logo */
+
+#core_logo { margin-bottom:20px; }
+#core_logo .main { color:#222; }
+#core_logo .submain { color:#666; font-size:12px;  }
+#core_logo img {
+  height: 70px;
+}
+
+.menuitems,
+.menuitems a {
+  color: #fff;
+}
+.menuitems a:hover {
+  color: #ccc;
+}
+.menuitems p {
+  margin: 0;
+}
+.menuitems a:hover {
+  color: #db0000;
+}
+
+.menuitems .icon2 {
+  border-color: #666;
+  border-width: 2px;
+}
+.menuitems .icon1:before,
+.menuitems .icon2:before {
+  margin-top: -6px;
+}
+.menuitems .icon1:before {
+  content: "\f10b"; /* mobile phone */
+}
+.menuitems .icon2:before {
+  content: "\f0d1"; /* truck */
+}
+
+/* top navigation */
+
+.tagline {
+  color: #db0000;
+  font-size: 13px;
+  text-transform: none;
+}
+
+#core_header_navigation { border-bottom:1px dashed #ddd; }
+#core_header_navigation .container { border-bottom: 1px dotted #ddd; margin-bottom: 10px;   }
+#core_header_navigation .nav  > li a, #core_header_navigation .welcometext { color: #444; text-transform: uppercase; font-weight:normal; font-size:13px;   }
+
+/* main navigation */
+
+#core_menu_wrapper {
+
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+border-bottom:5px solid #db0000;  }
+
+#core_menu_wrapper .navbar-nav > li { padding: 23px 0px;   min-width:140px; border-right:1px solid #ddd; border-left:0; }
+#core_menu_wrapper .navbar-nav > li.homeli { min-width:80px; border-left:0px; }
+#core_menu_wrapper .navbar-nav > li.homeli a {  color: #3e454c; }
+
+.wlt_searchbox input {
+  max-width: 218px;
+}
+
+/* custom branded header styles */
+
+#core_header_wrapper {
+  background-color: #222;
+}
+#core_menu_wrapper {
+  background: #eee;
+}
+#core_menu_wrapper .navbar-nav > li a {
+  text-align:center;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 600;
+}
+#core_menu_wrapper .navbar-nav > li a:hover {
+  color: #000;
+}
+
+#core_menu_wrapper .dropdown-menu > li a {
+  padding: 0.5em 1.4em;
+  text-align: left;
+  color: #222 !important;
+  text-transform: none;
+}
+
+/*------------------------------------------------------*/
+/* Homepage
+/*------------------------------------------------------*/
+
+#core_padding .core_section_top_row {
+  padding-top: 30px!important;
+}
+
+#car-slider img {
+  width: 100%;
+}
+
+.row-flex {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.row-flex-box {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home .bannerboxside .banner-title {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.home .bannerboxside p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.home .owl-carousel {
+  margin-bottom: 1em;
+  max-height: 100% !important;
+  overflow: hidden;
+}
+.home .owl-carousel.style1 {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.bannerboxside {
+  /* flexbox */
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: row wrap;
+}
+.bannerboxside {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.bannerboxside div {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.bannerboxside .alt2 {
+  margin-top: 1em;
+  background: #db0000;
+}
+
+
+body.home .block-title {
+  position: relative;
+  margin: -1px 0 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #888;
+  border-top: 30px solid #fff;
+}
+body.home .block-title h3 {
+  font-weight: 600;
+}
+
+.makerslist {
+  display: none;
+}
+
+/*------------------------------------------------------*/
+/* Sidebar
+/*------------------------------------------------------*/
+
+.fg-year {
+  float: left;
+  width: 49%;
+}
+
+.core_sidebar button[type=submit] {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+/*------------------------------------------------------*/
+/* Listing
+/*------------------------------------------------------*/
+
+.single-listing_type .wlt_shortcode_contact_button {
+  display: none;
+}
+
+.wlt_shortcode_btnbar {
+  background: #eee !important;
+  border: 0;
+}
+
+#tab_description .block,
+#tab_description .table {
+  display: none;
+}
+.wlt_shortcode_btnbar a.btn-danger:last-of-type {
+  display: none;
+}
+
+.listing-header {
+  display: table;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.listing-header h1 {
+  margin: 10px 0;
+}
+.listing-header .list-inline {
+  margin-left: 0 !important;
+}
+.item-price {
+  padding: 0 !important;
+  margin-bottom: 6px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.item-contact {
+  padding: 0 !important;
+  width: 100%;
+}
+.item-contact a {
+  padding: 4px 10px;
+}
+
+.listing-header-links {
+  padding-top: 50px;
+  background-image: url(img/logo-trademe.png);
+  background-repeat: no-repeat;
+  background-position: center 10px;
+}
+.listing-header-links a {
+  width: 100%;
+}
+
+.listing-detail {
+  clear: both;
+}
+
+/*------------------------------------------------------*/
+/* SEARCH RESULTS
+/*------------------------------------------------------*/
+
+.search .core_middle_wrap, .archive .core_middle_wrap {   padding: 20px;  border: 1px solid #ddd; margin-bottom:20px; }
+
+.thumbnail {
+  background-color: #FBFBFB;
+}
+
+#core_logo img { max-height: 70px; }
+
+._searchresultsblock h4 {
+  font-size: 1em;
+}
+.wlt_search_results .pricetag {
+  font-size: 16px;
+  font-weight: 600;
+}
+.wlt_search_results .wlt_shortcode_carstatus {
+  display: none;
+}
+
+.wlt_search_results.grid_style .list-inline li {
+  padding: 0;
+  float: left;
+  width: 50%;
+  border: 0;
+  background: transparent;
+}
+.wlt_search_results.grid_style .list-inline li:last-of-type {
+  display: none;
+}
+
+.wlt_search_results.grid_style .list-inline {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0;
+  width: 100%;
+  background-color: #eee;
+}
+.wlt_search_results .line1 {
+  display: none;
+}
+
+.wlt_search_results.grid_style .list-inline span,
+.wlt_search_results.grid_style .list-inline em {
+  white-space: nowrap;
+}
+
+/* listing panel */
+
+.wlt_search_results.grid_style .list-inline li span {
+  font-size: 14px;
+}
+.wlt_search_results.grid_style .list-inline li em {
+  color: #555;
+}
+.wlt_search_results.grid_style .list-inline li:last-of-type em {
+  color: transparent;
+  position: relative;
+  text-align: center;
+}
+.wlt_search_results.grid_style .list-inline li:last-of-type em:before {
+  content: "km";
+  position: absolute;
+  left: 0;
+  color: #555;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*------------------------------------------------------*/
+/* Widgets
+/*------------------------------------------------------*/
+
+.panel-promo {
+  padding: 1em;
+  color: #fff;
+  background-color: #db0000;
+}
+.panel-promo .banner-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.panel-promo a {
+  color: #fff;
+}
+.panel-promo a:hover {
+  text-decoration: none;
+}
+
+/*------------------------------------------------------*/
+/* Forms
+/*------------------------------------------------------*/
+
+.form-control {
+  border-radius: 2px !important;
+}
+
+/*------------------------------------------------------*/
+/* BUTTONS
+/*------------------------------------------------------*/
+
+.btn {
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-image: none;
+  background: #222;
+  border-color: #222;
+}
+
+.btn-primary:hover,.btn-primary:active,.btn-primary.active,.btn-primary.disabled,.btn-primary[disabled] {
+    color:#fff;
+    background-color:#222;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background: #222 !important;
+  border-color: #222 !important;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+  color: #666 !important;
+  background-color: #fff !important;
+  border-color: #ddd !important;
+}
+
+.btn-url,
+.btn-url:hover,
+.btn-url:focus,
+.btn-url:active {
+  color: #a65200 !important;
+  background-color: #fbcc48 !important;
+  border-color: #e19b16;
+  font-weight: 600;
+}
+
+.btn-lg {
+  padding: 12px 34px;
+}
+
+/*------------------------------------------------------*/
+/* Footer
+/*------------------------------------------------------*/
+
+footer {
+  margin-top: 2em;
+}
+
+#footer_content .col-md-4 {
+  display: block !important; /* force display of widgets */
+}
+
+#footer_bottom .copybit, .socialicons li {
+  float: none !important; /* prevent floats */
+}
+
+#footer_bottom a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+  .copybit > div {
+    text-align: center !important;
+  }
+}
+
+/*------------------------------------------------------*/
+/* Components
+/*------------------------------------------------------*/
+
+#core_breadcrumbs {
+  border: 0;
+}
+
+/*------------------------------------------------------*/
+/* Helpers
+/*------------------------------------------------------*/
+
+.spacer {
+  display: block;
+  margin: 40px 0;
+  width: 100%;
+  clear: both;
+}
+
+.t-cell {
+  display: table-cell;
+}
+
+.v-top {
+  vertical-align: top;
+}
+
+/*------------------------------------------------------*/
+/* Custom
+/*------------------------------------------------------*/
+
+.contact-option {
+  margin: 1.4em 0;
+}
+.contact-item {
+  margin-bottom: 1em;
+  width: 100%;
+}
+.contact-item a {
+  width: 100%;
+}
+.contact-item-primary .btn,
+.contact-item-primary .btn:hover,
+.contact-item-primary .btn:focus {
+  background-color: #db0000 !important;
+  border-color: #db0000 !important;
+}
+
+/*------------------------------------------------------*/
+/* Vendor
+/*------------------------------------------------------*/
+
+.ninja-forms-required-items {
+  margin: 1em 0;
+  color: #999;
+}
+
+/*------------------------------------------------------*/
+/* Media Queries
+/*------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+  /* hide from small screens */
+  #car-slider {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+
+  .bannerboxside .banner-title br {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  /* homepage */
+
+  .bannerboxside {
+    flex-flow: row nowrap;
+  }
+  .bannerboxside div {
+    width: 50%;
+  }
+  .bannerboxside .alt2 {
+    margin: 0;
+    margin-left: 1em;
+  }
+
+  /* listing page */
+
+  .listing-header-summary {
+    display: table-cell;
+    /*width: 100%;*/
+  }
+  .listing-header-links {
+    display: table-cell;
+    width: 180px;
+  }
+  .item-price {
+    padding: 0 10px 0 0 !important;
+    width: auto;
+    border-right: 1px solid #ccc;
+  }
+  .item-contact {
+    width: auto;
+    padding-left: 10px !important;
+  }
+
+  /* contact page */
+
+  .contact-item {
+    width: auto;
+  }
+  .contact-item a {
+    width: auto;
+  }
+
+}
+
+@media screen and (min-width: 990px) {
+
+  /* hide page links from medium up */
+
+  .menu-item-object-page {
+    display: none !important;
+  }
+
+  /* homepage */
+
+  .bannerboxside {
+    flex-flow: row wrap;
+  }
+
+  .bannerboxside div {
+    width: 100%;
+  }
+  .bannerboxside .alt2 {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* set columns to display as table cell */
+  .col-sm-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    vertical-align: top;
+  }
+  .home .owl-carousel {
+    margin-bottom: 0;
+  }
+  .home .bannerboxside .banner-title {
+    font-size: 5rem;
+  }
+
+}
